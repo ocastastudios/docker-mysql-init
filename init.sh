@@ -1,4 +1,6 @@
 #!/bin/sh
+echo 'Waiting, to give containers time to link...'
+sleep 10
 echo 'Creating database...'
 mysql -u $ROOT_USER -p$ROOT_PASSWORD -h $SERVER --connect_timeout 10 -e "CREATE DATABASE $NEW_DATABASE;"
 echo 'Done.'
