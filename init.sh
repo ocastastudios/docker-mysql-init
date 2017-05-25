@@ -38,8 +38,7 @@ envs=(
 for e in "${envs[@]}"; do
 	file_env "$e"
 done
-
-export 
+ 
 if [ -z ${ROOT_USER+x} ]; then echo "ROOT_USER is unset"; exit 1; fi
 if [ -z ${ROOT_PASSWORD+x} ]; then echo "ROOT_PASSWORD is unset"; exit 1; fi
 if [ -z ${DB_HOST+x} ]; then echo "DB_HOST is unset"; exit 1; fi
